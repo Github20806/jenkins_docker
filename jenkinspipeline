@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_HUB_CREDENTIALS = 'sandeep-credentials'
-        DOCKER_IMAGE_NAME = 'cibbi546/jenkinsdocker'
+        DOCKER_HUB_CREDENTIALS = 'docker_credentials'
+        DOCKER_IMAGE_NAME = 'bsoundarya/jenkins_pipeline'
         DOCKER_IMAGE_TAG = "latest-${env.BUILD_NUMBER}"
         GIT_URL = 'https://github.com/Gopala-Polimetla/Demo.git'
     }
